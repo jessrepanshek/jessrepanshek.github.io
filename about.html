@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- 
+    Student name: Jess Repanshek
+    File name: template.html
+    Project: MUC218 - Final Project
+    Date: 6/14/2023
+-->
+<html lang="en">
+    <head>
+        <title>AMP Project: Template</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="scripts/scripts.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    
+    <body onload="javascript:init();">
+        
+        <!-- Skip to Content Link --> 
+        <a class="skip" href="#content">Skip to Content</a>
+        
+        <div id="container">
+            
+            <!-- Header / Logo Area -->
+            <header id="amp-logo">
+                <a href="index.html"><img id="logo" src="images/amp-logo.png" alt="AMP Project Logo"></a>
+            </header>
+            
+            <!-- Mobile Nav section -->
+            <nav class="mobile-nav">
+                <div id="menu-links" class="menu">
+                    <a class="menuItem" href="index.html">Home</a>
+                    <a class="menuItem" href="about.html">About Us</a>
+                    <a class="menuItem" href="gallery.html">Gallery</a>
+                    <a class="menuItem" href="blog.html">Blog</a>
+                    <a class="menuItem" href="contact.html">Contact Us</a>
+                </div>
+                <button class="hamburger">
+                    <!-- material icons https://material.io/resources/icons/ -->
+                    <i class="menuIcon material-icons">menu</i>
+                    <i class="closeIcon material-icons">close</i>
+                </button>
+            </nav>
+
+            <!-- Tablet and Desktop Nav -->
+            <nav class="tablet-desktop">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Main Content -->
+            <main id="content">
+                <aside class="headline-span">
+                    <h1>About the AMP Project</h1>
+                </aside>
+                <section id="about-us">
+                    <figure>
+                        <img class="image-left" src="images/painter.jpeg">
+                        <p>At <a href="index.html">The Arts and Music in Prisons Project</a>, our mission is to empower incarcerated individuals through the transformative power of art and music education. We believe that every person, regardless of their circumstances, deserves the opportunity to discover their creative potential and cultivate a positive sense of self-expression.</p>
+
+                        <p>By engaging in artistic exploration and skill-building, we aim to cultivate a sense of self-worth, resilience, and hope among our students. We believe that the transformative power of art and music has the potential to break cycles of recidivism and inspire positive change.</p>
+                        
+                        <a id="mission"></a>
+
+                        <p>Together, we are committed to bringing the transformative benefits of art and music education to prisons, creating a pathway towards rehabilitation, personal growth, and a brighter future for all.</p>
+
+                    </figure>
+                </section>
+                <aside>
+                    <h1>Mission Statement</h1>
+                </aside>
+                <section>
+                    <figure>
+                        <img class="image-right" src="images/painter2.jpeg">
+                        <p>The AMP Project is a 501.c3 non-profit dedicated to providing comprehensive and accessible art and music education programs within prisons. By fostering a safe and inclusive environment, we aim to inspire personal growth, emotional healing, and social development among the incarcerated population.</p>
+
+                        <p>Studies have shown that for every $1 spent on correctional education, $5 is saved in long-term re-incarceration costs. There are also direct links between increases in education and decreases in crime. Some of the biggest challenges individuals face when exploring life outside prison are related to financial means, usually having no savings to draw from and no job opportunities to afford life.
+
+                        <a id="outcomes"></a>
+
+                        <p>Ultimately, our mission is to equip individuals with the tools, skills, and confidence they need to successfully reintegrate into society. By harnessing the power education, we create a future where individuals leaving the prison system are equipped with a renewed sense of purpose, a positive outlet for self-expression, and the ability to positively impact their lives and communities.</p>
+                    </figure>
+                </section>
+                <aside>
+                    <h1>Outcomes</h1>
+                </aside>
+                <section>
+                    <figure>
+                        <img class="image-left" src="images/volunteer.jpeg">
+                        <p>Through our passionate team of dedicated instructors and volunteers, we strive to unlock the inherent artistic abilities and talents of individuals behind bars. We offer a diverse range of creative outlets, including visual arts, music, writing, and performance, tailored to meet the unique needs and interests of each participant.</p>
+
+                        <p>We are committed to fostering connections and building bridges between the incarcerated individuals and the broader community. Through exhibitions, performances, and outreach initiatives, we seek to challenge stigmas and promote understanding, empathy, and societal change.</p>
+
+                        <p>Our main goals are to help individuals create a source of income to cover the cost of incarceration; establish programs that help individuals develop skills that can create bonds and outlets; decrease recidivism by creating means by which individuals can succeed in the world post-incarceration; and decrease violence in prisons by helping individuals find meaningful work and establishing incentives for good behavior.</p>
+                    </figure>
+                </section>
+                <div id="hero2">
+                
+                </div>
+            </main>
+
+            <!-- Footer -->
+            <footer>                
+                <div class="social">
+                    <p>Visit Us On Social Media</p>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-logo.png" alt="Facebook logo"></a>
+                    <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter-logo.png" alt="Twitter logo"></a>
+                </div>
+                <div class="copyright">
+                    <p>The AMP Project<br>
+                    2219 SE 68th Ave<br>
+                    Portland, OR 97215</p>
+                    <p><a href="mailto:contact@amp-project.org">✉ contact@amp-project.org</a></p>
+                    <p><span style="font-size: 80%">&copy; Copyright 2023. <br>All Rights Reserved.</span></p>
+                </div>
+            </footer>
+            
+        </div>
+        
+    </body>
+</html>

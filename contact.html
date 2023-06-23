@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- 
+    Student name: Jess Repanshek
+    File name: template.html
+    Project: MUC218 - Final Project
+    Date: 6/14/2023
+-->
+<html lang="en">
+    <head>
+        <title>AMP Project: Template</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="scripts/scripts.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    
+    <body onload="javascript:init();">
+        
+        <!-- Skip to Content Link --> 
+        <a class="skip" href="#content">Skip to Content</a>
+        
+        <div id="container">
+            
+            <!-- Header / Logo Area -->
+            <header id="amp-logo">
+                <a href="index.html"><img id="logo" src="images/amp-logo.png" alt="AMP Project Logo"></a>
+            </header>
+            
+            <!-- Mobile Nav section -->
+            <nav class="mobile-nav">
+                <div id="menu-links" class="menu">
+                    <a class="menuItem" href="index.html">Home</a>
+                    <a class="menuItem" href="about.html">About Us</a>
+                    <a class="menuItem" href="gallery.html">Gallery</a>
+                    <a class="menuItem" href="blog.html">Blog</a>
+                    <a class="menuItem" href="contact.html">Contact Us</a>
+                </div>
+                <button class="hamburger">
+                    <!-- material icons https://material.io/resources/icons/ -->
+                    <i class="menuIcon material-icons">menu</i>
+                    <i class="closeIcon material-icons">close</i>
+                </button>
+            </nav>
+
+            <!-- Tablet and Desktop Nav -->
+            <nav class="tablet-desktop">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Main Content -->
+            <main id="content">
+                <aside class="grid-span">
+                    <h1>Contact Us</h1>
+                </aside>
+                
+                <figure class="form">
+                    <p>Got Questions? We'd love to hear from you!</p>
+                    <form class="form-grid" action="https://rocco.webhostingforstudents.com/cis195h/pht/formInfo.php" method="POST"> 
+                        <!-- Start Form -->
+                        <fieldset>
+                            <legend>Contact Us:</legend>
+
+                            <label for="contactName">Name:</label>
+                            <input type="text" name="contactName" id="contactName" required>
+
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" required>
+
+                            <label for="subject">Subject:</label>
+                            <textarea id="subject" name="subject" rows="1" cols="35"></textarea>
+
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" cols="35"></textarea>
+
+                        </fieldset>
+
+                        <input type="submit" id="submit" value ="Submit" class="button">
+                    </form>
+                </figure>
+            </main>
+
+            <!-- Footer -->
+            <footer>                
+                <div class="social">
+                    <p>Visit Us On Social Media</p>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-logo.png" alt="Facebook logo"></a>
+                    <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter-logo.png" alt="Twitter logo"></a>
+                </div>
+                <div class="copyright">
+                    <p>The AMP Project<br>
+                    2219 SE 68th Ave<br>
+                    Portland, OR 97215</p>
+                    <p><a href="mailto:contact@amp-project.org">✉ contact@amp-project.org</a></p>
+                    <p><span style="font-size: 80%">&copy; Copyright 2023. <br>All Rights Reserved.</span></p>
+                </div>
+            </footer>
+            
+        </div>
+        
+    </body>
+</html>
