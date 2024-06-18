@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- 
+    Student name: Jess Repanshek
+    File name: template.html
+    Project: MUC218 - Final Project
+    Date: 5/27/2022
+-->
+<html lang="en">
+    <head>
+        <title>AMP Project: Blog</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="scripts/scripts.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    
+    <body onload="javascript:init();">
+        
+        <!-- Skip to Content Link --> 
+        <a class="skip" href="#content">Skip to Content</a>
+        
+        <div id="container">
+            
+            <!-- Use the header area for the website name or logo -->
+            <header id="amp-logo">
+                <a href="index.html"><img id="logo" src="images/amp-logo.png" alt="AMP Project Logo"></a>
+            </header>
+            
+            <!-- Mobile Nav section -->
+            <nav class="mobile-nav">
+                <div id="menu-links" class="menu">
+                    <a class="menuItem" href="index.html">Home</a>
+                    <a class="menuItem" href="about.html">About Us</a>
+                    <a class="menuItem" href="gallery.html">Gallery</a>
+                    <a class="menuItem" href="blog.html">Blog</a>
+                    <a class="menuItem" href="contact.html">Contact Us</a>
+                </div>
+                <button class="hamburger">
+                    <!-- material icons https://material.io/resources/icons/ -->
+                    <i class="menuIcon material-icons">menu</i>
+                    <i class="closeIcon material-icons">close</i>
+                </button>
+            </nav>
+
+            <!-- Tablet and Desktop Nav -->
+            <nav class="tablet-desktop">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Use the main area to add the main content of the webpage -->
+            <main id="content">
+                <aside>
+                    <h1>The Program</h1>
+                </aside>
+                <section id="about-us">
+                    <figure>
+                        <img class="image-left" src="images/painter.jpeg">
+                        <p>Our goal is to re-think corrections. The current "corrections" system is largely viewed as a punitive response to criminal activity. The term "corrections" is a little misleading. By at the end of incarceration, few individuals are prepared to re-enter society successfully. We want to change this.</p>
+                        <p>Education is an underlying factor inversely related to incaceration rates. Studies have found that only half of individuals in US prisons have earned a GED or High School diploma prior to being incarcerated. The vast majority of incarcerated individuals do not hold a college degree.</p>
+                        <p>We believe that art and music are vital parts of a well rounded educational plan. Our mission is to bring art and music education into prisons to help effect change within prisons, and help equip incarcerated individuals with skills that can help them re-enter the world.</p>
+                        <h2>The Program Program</h2>
+                        <p>Incarcerated indivials in good standing can register to participate in our program. Our Board of Directors reviews every application and matches potential students with volunteer educators.</p>
+                        <p>Volunteer educators, using equipment purchased by or donated to The AMP Project, create art and music courses designed to give incarcerated individuals skills such as project management, literacy, comprehension, and work ethic. These courses culminate in a final project, often in the form of a short story, essay, painting, or music recording.</p>
+                        <p>Individuals may optionally submit their final project to The AMP Project. Short-form written works may be viewed on our blog. Long-form written works may be accessed as eBooks. Artworks and musical recordings may be displayed in our gallery. These items are available for purchase through The AMP Project. Proceeds go to keeping The AMP Project running, with a portion being delivered into an inmates commissary (trust) account.
+                        <p>These courses work as incentive to give individuals a purpose while in prison, and help open their mind to possibilities for creative employment in the real world. These incentives are designed to reduce prison violence and decrease recidivism rates.</p>
+                    </figure>
+                </section>
+            </main>
+
+            <!-- Use the footer area to add webpage footer content -->
+            <footer>                
+                <div class="social">
+                    <p>Visit Us On Social Media</p>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-logo.png" alt="Facebook logo"></a>
+                    <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter-logo.png" alt="Twitter logo"></a>
+                </div>
+                <div class="copyright">
+                    <p>The AMP Project<br>
+                    2219 SE 68th Ave<br>
+                    Portland, OR 97215</p>
+                    <p><a href="mailto:contact@amp-project.org"><span class="material-icons">mail_outline</span> contact@amp-project.org</a></p>
+                    <p><span style="font-size: 80%">&copy; Copyright 2023. <br>All Rights Reserved.</span></p>
+                </div>
+            </footer>
+            
+        </div>
+        
+    </body>
+</html>
