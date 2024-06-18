@@ -1,0 +1,990 @@
+/*
+Author: Jess Repanshek
+Date: 6/14/2023
+File Name: styles.css
+Project: AMP
+*/
+
+/* Color Palette 
+light blue - #32dcdc
+light yellow - #f9e1b1
+light orange - #f49215
+dark orange - #f26c11
+dark blue - #134982
+purple - #46264d
+*/
+
+/* CSS Reset */
+body, header, nav, main, section, footer, div, img, figure, figcaption, h1, h3, content, container, ul, li, table, th, tr, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* All body and images */
+body {
+    background-color: #f49215; 
+    font-family: 'Raleway', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* All elements box sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* Skip navigation link */
+.skip {
+    position: absolute;
+    left: -999px;
+    font-size: .75em;
+}
+
+.skip:focus {
+    color: #fff;
+    background-color: #46264d;
+    text-decoration: none;
+    padding: 0.5%;
+    top: auto;
+    left: auto;
+    right: 1px;
+    z-index: 1;
+}
+
+/* Mobile: Style rule for header */
+header {
+    top: 0;
+    background-color: #f49215; 
+    height: 150px;
+    position: sticky; 
+    z-index: 9;
+}
+
+header img {
+    margin: 0 auto;
+    width: 150px;
+    padding: 2%;
+}
+
+
+/* Mobile: Show mobile class and hide tablet-desktop class */
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+/* Mobile: Nav / hamburger menu */
+#logo {
+    display: block;
+}
+
+.mobile-nav a {
+    color: #fff;
+    background-color: #f49215; 
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+    position: sticky;
+    z-index: 15;
+    border-bottom: 1px solid #46264d;
+}
+
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+}
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 1px;
+  border: #46264d dotted 1px;
+  border-radius: 2px;
+  background: #f49215;
+  cursor: pointer;
+}
+
+.closeIcon {
+  display: none;
+  color: #46264d;
+}
+
+.menuIcon {
+    color: #46264d;   
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+  position: fixed;
+  opacity: 0;
+  transform: translateY(-110%);
+  transition: opacity .5s, transform .5s ease-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background-image: linear-gradient(#f49215, #46264d);
+  background-color: #46264d;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+}
+
+.showMenu {
+  transition: opacity .5s, transform .5s ease-out;
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+/* Mobile: Main content area */
+#content {
+    padding: 1% 0 0 0;
+    background-color: #bfc7da;
+}
+
+h1, h2, h3 {
+    color: white;
+    text-shadow: 3px 2px 4px #666;
+    text-decoration: underline;
+    text-decoration-thickness: .12em;
+    font-style: italic;
+}
+
+.larger {
+    font-size: 140%;
+}
+
+ul {
+    padding: 1% 7%;
+}
+
+li {
+    font-size: 1em;
+}
+
+.button {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 1px 1px black;
+    font-style: italic;
+    font-weight: 500;
+    background: rgb(70,38,77);
+    background: linear-gradient(340deg, rgba(70,38,77,1) 2%, rgba(244,146,21,1) 45%);
+    font-size: 1.25em;
+    box-shadow: 1px 1px 2px #46264d;
+    transition: background-color .5s, color .5s, font-weight: 1s;
+    margin: auto;
+}
+
+.button:hover {
+    background: #46264d;
+    color: #f49215;
+    transition: background-color .5s, color .5s;
+    font-weight: bold;
+}
+
+.form .button {
+    font-size: .8em;
+}
+
+/* Mobile: Hero Section and Call to Action */
+#hero {
+    min-height: 250px;
+    background-size: 100%;
+
+    padding: 5% 4%;
+    background-image: url("../images/hero.jpeg");
+}
+
+#hero2 {
+    min-height: 100px;
+    background-size: 100%;
+    background-position-y: -25px;
+    padding: 5% 4%;
+    background-image: url("../images/hero2.jpeg");
+}
+
+.cta {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    padding: 2%;
+    box-shadow: 6px 6px 5px #46264d;
+    border-radius: 15px;
+    background: rgb(223,227,236);
+    background: linear-gradient(115deg, rgba(223,227,236,0.65) 0%, rgba(171,179,196,0.65) 91%);
+}
+
+.cta h1 {
+    font-size: 1.75em;
+    color: white;
+    text-shadow: 3px 2px 4px #666;
+}
+
+.cta p {
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 3px 2px 4px #666;
+}
+
+.cta .button {
+    display: inline-block;    
+}
+
+section {
+    margin-bottom: 5%;
+}
+
+figure, aside {
+    font-size: 1.25em;
+    margin: 5% 5%;
+    padding: 0 0 1% 0;
+    box-shadow: 6px 6px 5px #46264d;
+    border-radius: 15px;
+    background: rgb(223,227,236);
+    background: linear-gradient(115deg, rgba(223,227,236,1) 0%, rgba(171,179,196,1) 91%);
+}
+
+figure p {
+    text-indent: 5%;
+    padding: 1% 5%;
+    font-weight: 200;
+    font-size: 1em;
+}
+
+figure h1 {
+    padding: 1%;
+    font-size: 1.25em;
+}
+
+aside {
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 1%;
+    margin-top: 3px;
+}
+
+aside li {
+    list-style-position: inside;
+}
+
+aside h1 {
+    font-size: 1.25em;
+    padding: 3% 0;
+    font-weight: normal;
+}
+
+aside h2 {
+    font-weight: normal;
+}
+
+aside p {
+    margin: 0;
+    font-size: 1em;
+    padding: 1% 5%;
+    font-weight: 200;
+}
+
+.figure-image, .image-left, .image-right {
+    border-radius: 15px 15px 0 0;
+    box-shadow: 3px 3px 3px #46264d;
+    width: 100%;
+}
+
+figcaption {
+    font-style: italic;
+    color: #32dcdc;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 3px 3px 5px #46264d;
+    background: rgba(255, 255, 255, .85);
+    padding: 2%;
+}
+
+.frame {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 10%;
+}
+
+.pic-text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5%;
+    border-radius: 15px 0px 0px 0px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.spacer1 {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); 
+    min-height: 100px;
+    background-size: 100%;
+    background-position-y: -25px;
+    padding: 5% 4%;
+    background-image: url("../images/hero2.jpeg");
+}
+
+.spacer2 {
+    min-height: 100px;
+    background-size: 100%;
+    background-position-y: -25px;
+    padding: 5% 4%;
+    background-image: url("../images/hero2.jpeg");
+}
+
+/* Mobile: Blog */
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.blog-info {
+    flex: 1;
+    display: inline;
+    max-width:  30vw;
+    max-height: 45vw;
+    margin: 0 1%;
+}
+
+.blog-profile {
+    border-radius: 5px;
+}
+.blog-name {
+    font-weight: 400;
+}
+
+.blog-detail {
+    font-style: italic;
+    font-size: .65em;
+}
+
+.blog-text {
+    flex: 3;
+    text-align: left;
+    text-indent: 1em;
+    padding: 1% 3%;
+    margin: 0 1%;
+    font-size: 1.5em;
+}
+
+.blog-text .blog-date {
+    font-style: italic;
+    font-size: .65em;
+    float: right;
+    max-width: 20%;
+    text-indent: 0;
+    text-align: right;
+}
+
+.blog-text h1 {
+    text-indent: 0;
+    padding-bottom: 1%;
+    font-size: 1.25em;
+}
+
+.blog-text .blog-author {
+    padding: 2% 0 5% 0;
+    font-size: .65em;
+    text-indent: 1em;
+}
+
+.blog-text h2 {
+    font-size: 1.05em;
+}
+
+.blog-text p {
+    font-size: .85em;
+}
+
+/* Mobile: Read more buttons */
+#more1, #more2, #more3 {
+    display: none;
+}
+
+
+#myBtn1, #myBtn2, #myBtn3 {
+    padding: 2%;
+    border-radius: 5px;
+    font-size: .6em;
+    margin: 2% 0 0 15%;
+}
+
+
+/* Mobile: Gallery */
+.gallery-frame {
+    flex: 1 2;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 85%;
+}
+
+.gallery-image {
+    border-radius: 5px 5px 0 0;   
+}
+
+.gallery-title {
+    margin: 1% 0 0 0;
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+.gallery-info {
+    font-style: italic;
+    margin: 0;
+}
+
+.gallery-price {
+    margin: 0 0 1% 0;
+}
+
+.gallery-buy {
+    padding: 2% 3%;
+    margin: 2%;
+    border-radius: 5px;
+    background: rgb(70,38,77);
+    background: linear-gradient(340deg, rgba(70,38,77,1) 2%, rgba(244,146,21,1) 50%);
+    color: #46264d;
+    font-style: italic;
+    font-size: 1em;
+    box-shadow: 1px 1px 2px #46264d;
+    transition: background-color .5s, color .5s, font-weight: 1s;
+}
+
+.gallery-buy:hover {
+    background: #46264d;
+    color: #f49215;
+    transition: background-color .5s, color .5s;
+    font-weight: bold;
+}
+
+/* Mobile: Form */
+.form-grid {
+    box-shadow: none;
+    padding: 2%;
+}
+
+fieldset input, textarea {
+    width: 90%;
+}
+
+fieldset, input, select, textarea {
+    margin-bottom: 1%;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.25em;
+    margin-top: 1%;
+}
+
+label {
+    display: block;
+    padding-top: 3%;
+}
+
+.required {
+    font-size: 100%;
+    color: red;
+    font-style: italic;
+    padding: 0;
+    text-indent: 0;
+}
+
+/* Mobile: Footer content */
+footer {
+    font-size: 0.85em;
+    text-align: center;
+    background-image: linear-gradient(#f49215, #46264d);
+    background-color: #46264d;
+    color: #fff;
+    padding: 1% 1%;
+}
+
+footer p a {
+    color: #f6eee4;
+    text-decoration: none;
+}
+
+.social img {
+    display: inline-block;
+    padding: 4%;
+}
+
+.material-icons {
+    font-size: 5px;
+    vertical-align: bottom;
+}
+
+/* Media query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+
+/* Tablet: Show tablet-desktop class, hide mobile class */
+    .tablet-desktop {
+        display: block;  
+    }
+    
+    .mobile {
+        display: none;
+    }
+    
+/* Tablet: Header **/
+    header {
+        padding-bottom: 1%;
+    }
+    
+/* Tablet: Nav area */
+    nav {
+        padding: 0;
+        margin: 0;
+        background-color: #f49215;
+    }
+
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav li {
+        display: inline-block;
+        font-size: 1.5em;
+        font-weight: 500;
+        border-right: 1px solid #000;
+    }
+    
+    nav li:last-child {
+        border-right: none;
+    }
+
+    nav li a {
+        display: block;
+        color: #fff;
+        padding: 0.2em 0.8em;
+        text-decoration: none;
+    }
+    .mobile-nav a {
+        padding: 1%;
+    }
+    
+    /* Tablet: Hero */
+    #hero {
+        min-height: 250px;
+        background-position-y: -75px;
+        padding: 4% 4%;
+    }
+
+    #hero2 {
+        min-height: 200px;
+        background-position-y: -40px;
+    }
+
+    .spacer1, .spacer2 {
+        width: 100%;
+        background-position-y: -40px;
+    }
+    
+    /* Tablet: Content styles */    
+    figure h1, figure h2, figure h3 {
+        font-size: 1.75em;
+    }
+    
+    figure p, figure li, table {
+        font-size: 1.25em;
+    }
+    
+    figure {
+        margin: 5%;
+        padding: 0 0 1% 0;
+    }
+    aside {
+        padding: 2%;
+        margin: 1%;
+    }
+    
+    aside h1 {
+        font-size: 1.5em;
+    }
+
+    aside li {
+        font-size: 1em;
+        font-weight: 200;
+    }
+
+    .image-left {
+        float: left; 
+        width: 33vw; 
+        padding: 2%;
+        border-radius: 5px;
+        box-shadow: 0px 0px 0px;
+    }
+
+    .image-right {
+        float: right; 
+        width: 33vw; 
+        padding: 2%;
+        border-radius: 5px;
+        box-shadow: 0px 0px 0px;
+    }
+    
+    .pic-text-overlay {
+        font-size: 1.5em;
+    }
+
+    /** Tablet: Blog **/
+    .blog-text .blog-date {
+        font-size: .75em;
+        float: right;
+        max-width: 15%;
+        text-indent: 0;
+        padding: 2% 0 0 0;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 30px;
+    }
+    .grid-span {
+        grid-column: 1 / span 3;
+    }
+
+    /** Tablet: Gallery **/
+    .gallery-frame {
+        flex: 1;
+        min-width: 35%;
+    }
+
+    /* Tablet: Form Rules */
+    .form {
+        padding: 1%;
+    }
+    .form .button {
+        font-size: 1em;    
+    }
+    
+    .form-grid {
+        margin: 0; 
+    }
+
+    legend {
+        font-size: 1.45em;
+    }
+    
+    label {
+        font-size: 1.25em;
+    }
+
+    /* Tablet: Footer  */
+    footer {
+        overflow: auto;
+    }
+    
+    .copyright {
+        float: left;
+        width: 50%;
+    }
+    
+    .social {
+        float: right;
+        width: 50%;
+    }
+}
+
+/* Media Query for Desktop Viewport. */
+@media screen and (min-width: 1000px), print {
+    
+    /* Desktop: Header */
+    header {
+        width: 25%;
+        float: left;
+        padding-bottom: 0;
+        position: relative;
+    }
+
+    /* Desktop: Nav */
+    nav {
+        float: right;
+        width: 70%;
+        margin: 2em 1em 0 0;
+    }
+    
+    nav ul {
+        text-align: right;
+    }
+    
+    nav li {
+        border-right: 1px solid #fff;
+    }
+    
+    nav li:last-child {
+        border: none;
+    }
+    
+    nav li a {
+        padding: 0.5em 1em;
+        transition: transform 1s, background-color .5s, color .5s;
+    }
+    
+    nav li a:hover {
+        color: #32dcdc;
+        background-color: #fff;
+        transform: scale(1.1);
+        transition: transform 1s, background-color .5s, color .5s;
+    }
+    .hamburger {
+        display: none;
+    }
+    
+    /* Desktop: Hero and CTA*/ 
+    #hero {
+        clear: both;
+        background-position-y: -150px;
+        height: 30vw;
+        padding: 6% 5% 0% 50%;
+    }
+    
+    #hero2 {
+        clear: both;
+        background-position-y: -100px;
+        height: 250px;
+        padding: 10% 50% 0% 5%;
+        margin: 0;
+    }
+    
+    .cta {
+        padding: 2%;
+    }
+    
+    .cta h1  {
+        font-size: 1.75em;
+    }
+
+    .cta p {
+        font-size: 1.5em;
+    }
+    
+    .cta {
+        margin: 0;
+    }
+
+    /* Desktop: Main content */
+    main {
+        clear: both;
+        padding: 0;
+        margin: 0;        
+    }
+    
+    section {
+        padding: 2% 5%;
+    }
+    
+    aside {
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    
+    aside h1 {
+        font-size: 150%;
+        padding: 0;
+        margin-bottom: 1%;
+    }
+    
+    aside p, figure p {
+        font-size: 1.05em;
+        line-height: 1.75em;
+    }
+
+    .spacer1, .spacer2 {
+        background-position-y: -126px;
+        min-height: 210px;
+    }
+    
+    figure {
+        margin: 1% 5%;
+        padding: 1% 0;
+    }
+    
+    figure h2, figure h3, figure p {
+        padding: 0 5%;
+    }    
+    
+    figure ul {
+        margin: 0 0 2% 5%;
+    }
+    
+    figure li, aside li {
+        font-size: 1em;
+        line-height: 2em;
+    }
+    
+    .figure-image {
+        margin: 0;    
+    }
+    
+    .image-left {
+        float: left; 
+        width: 20vw; 
+        padding: 2%;
+        border-radius: 5px;
+        box-shadow: 0px 0px 0px;
+    }
+
+    .image-right {
+        float: right; 
+        width: 20vw; 
+        padding: 2%;
+        border-radius: 5px;
+        box-shadow: 0px 0px 0px;
+    }
+    
+    /* Desktop: Grid formatting */
+    .col-span {
+        display: grid;
+        grid-template-columns: auto;
+        max-width: 50%;
+        margin: auto;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 30px;
+    }
+    
+    .grid-span {
+        grid-column: 1 / span 3;
+    }
+    
+    .grid-2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+    }
+    
+    .grid-2-span {
+        grid-column: 1 / span 2;
+    }
+
+    section {
+        margin-bottom: 0;
+    }
+    
+    /* Desktop: Blog  */
+    .blog-info {
+        max-width: 20vw;
+        max-height: 25vw;
+    }
+
+    .blog-detail {
+        font-size: .85em;
+    }
+
+    .blog-text {
+        flex: 4;
+        text-align: left;
+        text-indent: 3em;
+        padding: 1% 3%;
+        margin: 0 3%;
+    }
+
+    .blog-text .blog-date {
+        font-size: .95em;
+        float: right;
+        max-width: 10vw;
+
+    }
+
+    .blog-text h1 {
+        text-indent: 0;
+        padding: 1% 0 1% 0;
+        font-size: 1.5em;
+    }
+
+    .blog-text .blog-author {
+        font-size: .85em;
+        padding: 0 0 3% 0;
+    }
+
+    .blog-text h2 {
+        font-size: 1.25em;
+    }
+
+    .blog-text p {
+        font-size: 1em;
+    }
+
+    /* Desktop: Gallery */
+    .gallery-frame {
+        min-width: 15vw;
+        max-width: 30vw;
+        padding: 0;
+        margin-bottom: 3%;
+    }
+    
+    /* Desktop: Forms */
+    .form {
+        max-width: 50vw;
+        margin: 2% auto;    
+    }
+
+    .form-grid {
+        padding: 1% 3%;
+    }
+    
+    /* Desktop: Footer */
+    .copyright {
+        font-size: 1.5em;
+    }
+    
+    .social {
+        font-size: 1.75em;
+    }
+}
+
+/* Media Query for Large Desktop Viewports. */
+@media screen and (min-width: 1921px), print {   
+    body {
+        background: rgb(70,38,77);
+        background: linear-gradient(0deg, rgba(70,38,77,1) 2%, rgba(244,146,21,1) 20%);
+    }
+    
+    #container {
+        width: 1920px;
+        margin: 0 auto;
+    }
+}
+
+/* Media Query for Print */
+@media print {
+    body {
+        background: #fff;
+        color: #000;
+    }
+}
